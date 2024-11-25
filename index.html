@@ -84,7 +84,7 @@
 <body>
     <div id="timer">00:30</div>
     <div id="gameContainer"></div>
-    <div id="invitation">¡Cupon valido para salir a comer conmigo! 🎁</div>
+    <div id="invitation">¡Cupon valido para salir conmigo! 🎁</div>
 
     <script>
         const icons = ["❤️", "🌹", "🍫", "🍦", "🎈", "🎁", "❤️", "🌹", "🍫", "🍦", "🎈", "🎁"];
@@ -142,7 +142,7 @@
 
         function startConfetti() {
             const totalConfetti = 500;
-            const delay = 6; // Duración más corta de la animación para cada confeti
+            const delay = 6; 
             
             document.getElementById("timer").style.display = "none";
             for (let i = 0; i < totalConfetti; i++) {
@@ -152,7 +152,7 @@
                     confetti.style.left = Math.random() * window.innerWidth + 'px';
                     confetti.style.animation = `confetti-animation ${delay}s linear infinite`;
                     document.body.appendChild(confetti);
-                }, delay / totalConfetti * i * 1000); // Emite confeti en intervalos regulares
+                }, delay / totalConfetti * i * 1000); 
             }
         }
 
